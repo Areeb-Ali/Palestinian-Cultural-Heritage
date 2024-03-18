@@ -1,0 +1,195 @@
+/* Basic styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Styles */
+.main {
+    padding-top: 50px;
+}
+
+.hero {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about,
+.popular-culture,
+.call-to-action {
+    padding: 50px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.about h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.about a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.popular-culture h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(25% - 20px); /* Adjust for spacing between cards */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.card p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.call-to-action {
+    background-color: #f1f1f1;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Responsiveness - Tablets (portrait) */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .hero h2,
+    .about h3,
+    .popular-culture h2 {
+        font-size: 1.3em;
+    }
+
+    .card {
+        width: calc(50% - 10px); /* Adjust for spacing on smaller screens */
+    }
+}
+
+/* Responsiveness - Phones (landscape) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .hero,
+    .about,
+    .popular-culture,
+    .call-to-action {
+        padding: 30px 0;
+    }
+
+    .card {
+        width: 100%; /* Make cards full width on small screens */
+    }
+
+    .card img {
+        margin-bottom: 5px;
+    }
+}
+
