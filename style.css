@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.left-side {
+    width: 100px;
+    margin-left: 30px;
+}
+
+.left-side img {
+    width: 100%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+}
+
+.menu li {
+    margin-left: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #0000003a;
+}
+
+/* <!-- DISCOVER HEADING STARTED  --> */
+
+.container {
+    display: flex;
+    width: 80%;
+}
+
+.left-side-discover {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.left-side-discover p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #aaa;
+    margin-right: 290px;
+}
+
+.left-side-discover h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.right-side-image {
+    flex: 1;
+    margin-left: 100px;
+}
+
+.right-side-image img {
+    width: 120%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.bottom-text {
+    position: fixed;
+    margin-top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    word-spacing: 0.7px;
+}
