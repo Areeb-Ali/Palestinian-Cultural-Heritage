@@ -92,3 +92,12 @@ nav {
     letter-spacing: 0.3px;
     word-spacing: 0.7px;
 }
+
+.img1 {
+    text-align: center;
+    margin: 130px 0;
+}
+
+.img1 a img {
+    width: 70%;
+}
